@@ -192,9 +192,23 @@ def average(numbers):
 # Skaitļu vidējais: 3.0
 
 if __name__ == "__main__":
-    print("--- Pārbaudām capitalize() funkciju ---")
     print(capitalize("hello world")) 
-    print(capitalize("PYTHON"))      
+    print(capitalize("PYTHON"))  
+    print(f"Īss teksts: {truncate('Sveiki!')}")
+    print(f"Garš teksts: {truncate('Šis ir ļoti garš teksts, kas jāsaīsina.', max_len=25)}") 
+    print(f"Vārdu skaits: {count_words('Šis ir piemērs tekstam.')}")
+    print(f"clamp(15, 0, 10) -> {clamp(15, 0, 10)}")
+    print(f"clamp(-3, 0, 100) -> {clamp(-3, 0, 100)}")
+    print(f"Is 7 prime? {is_prime(7)}")
+    print(f"Is 10 prime? {is_prime(10)}")
+    print(f"5! = {factorial(5)}")
+    print(f"0! = {factorial(0)}")
+    print("Pārbaudām factorial(-1):")
+    try:        factorial(-1)
+    except ValueError as e:        print(f"Error: {e}")
+    print(f"Skaitļu summa: {total([1, 2, 3, 4, 5])}")
+    print(f"Skaitļu vidējais: {average([1, 2, 3, 4, 5])}")
+
 
 #Pārbaude capitalize() funkciju 
 # Hello world
