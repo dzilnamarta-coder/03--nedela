@@ -109,4 +109,4 @@ for i, students in enumerate(studenti_ar_augstako_atzimi, start=1):
 
 # Studenti ar atzīmi >= 80: [{'vards': 'Līga', 'atzime': 95}, {'vards': 'Māris', 'atzime': 90}]
 # 1. Līga — 95
-# 2. Māris — 90
+# 2. Māris — 90'
